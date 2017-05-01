@@ -42,6 +42,17 @@ call plug#end()
 map <C-\> :NERDTreeToggle<CR>
 " map <C-p> :CtrlP<CR>
 
+" copy, paste and save
+vnoremap <C-C> "*ygv
+vnoremap <C-V> "*p
+inoremap <C-V> <C-R>*
+inoremap <C-S> <esc>:w<cr>
+nnoremap <C-S> :w<cr>
+vnoremap <C-S> :w<cr>
+" nnoremap <C-C> "+y
+" nnoremap <C-C> "+yl 
+" nnoremap <C-V> "+P
+
 inoremap kj <Esc>
 vnoremap <space><space> <Esc>
 cnoremap kj <Esc>
