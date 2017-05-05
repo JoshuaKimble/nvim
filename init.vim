@@ -5,7 +5,11 @@
 call plug#begin('~/.vim/plugged')
 
 " Syntax highlighting
-Plug 'crusoexia/vim-monokai'
+Plug 'crusoexia/vim-dracula'
+
+" Syntax for js
+Plug 'jelera/vim-javascript-syntax'
+Plug 'crusoexia/vim-javascript-lib'
 
 " NERD tree will be loaded on the first invocation of NERDTreeToggle command
 Plug 'scrooloose/nerdtree'
@@ -118,7 +122,7 @@ set ts=4 sw=4 sts=4 et
 
 " syntax highlighting
 syntax on
-colorscheme monokai
+colorscheme dracula
 set t_Co=256 
 
 " line numbers
