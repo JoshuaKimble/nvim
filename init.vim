@@ -35,6 +35,9 @@ Plug 'https://github.com/vim-syntastic/syntastic.git'
 " block comments
 Plug 'scrooloose/nerdcommenter'
 
+" emmet-vim
+Plug 'mattn/emmet-vim'
+
 " gutter git diff
 Plug 'airblade/vim-gitgutter'
 
