@@ -11,6 +11,9 @@ Plug 'crusoexia/vim-dracula'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'crusoexia/vim-javascript-lib'
 
+" Surround
+Plug 'git://github.com/tpope/vim-surround.git'
+
 " NERD tree will be loaded on the first invocation of NERDTreeToggle command
 Plug 'scrooloose/nerdtree'
 
