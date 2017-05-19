@@ -14,6 +14,9 @@ Plug 'crusoexia/vim-javascript-lib'
 " Surround
 Plug 'git://github.com/tpope/vim-surround.git'
 
+" NERD Commenter
+Plug 'scrooloose/nerdcommenter'
+
 " NERD tree will be loaded on the first invocation of NERDTreeToggle command
 Plug 'scrooloose/nerdtree'
 
@@ -45,6 +48,64 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sbdchd/neoformat'
 
 call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""Custom Settings""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+" pastemode toggle
+set pastetoggle=<F5>
+
+" eslint for syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+
+" ctrlp show hidden files
+let g:ctrlp_show_hidden = 1
+
+" Nerdtree show hidden files
+let NERDTreeShowHidden = 1
+
+" vim cursor
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+
+" insert mode - line
+let &t_SI .= "\<Esc>[5 q"
+
+" replace mode - underline
+let &t_SR .= "\<Esc>[4 q"
+
+" common - block
+let &t_EI .= "\<Esc>[3 q"
+
+" 4 space tabs
+set ts=4 sw=4 sts=4 et
+
+" syntax highlighting
+syntax on
+colorscheme dracula
+set t_Co=256 
+
+" line numbers
+set nu
+
+" NERDCommenter settings
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+" let g:NERDDefaultAlign = 'left'
+
+" Add your own custom formats or override the defaults
+" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""Mappings"""""""""""""""""""""
@@ -94,42 +155,6 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""Custom Settings""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-" pastemode toggle
-set pastetoggle=<F5>
-
-" eslint for syntastic
-let g:syntastic_javascript_checkers = ['eslint']
-
-" ctrlp show hidden files
-let g:ctrlp_show_hidden = 1
-
-" Nerdtree show hidden files
-let NERDTreeShowHidden = 1
-
-" vim cursor
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
-" insert mode - line
-let &t_SI .= "\<Esc>[5 q"
-
-" replace mode - underline
-let &t_SR .= "\<Esc>[4 q"
-
-" common - block
-let &t_EI .= "\<Esc>[3 q"
-
-" 4 space tabs
-set ts=4 sw=4 sts=4 et
-
-" syntax highlighting
-syntax on
-colorscheme dracula
-set t_Co=256 
-
-" line numbers
-set nu
+" NERD Commenter mapings
+[count]<leader>cc |NERDComComment|
+[count]<leader>cm |NERDComMinimalComment|
