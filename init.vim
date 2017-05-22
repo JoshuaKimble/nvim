@@ -128,6 +128,9 @@ inoremap kj <Esc>
 vnoremap <space><space> <Esc>
 cnoremap kj <Esc>
 
+" clear search 'ctrl -'
+nnoremap <C-_> :noh<cr>
+
 " Quickly edit/reload this configuration file
 nnoremap gev :e $MYVIMRC<CR>
 nnoremap gsv :so $MYVIMRC<CR>
@@ -154,7 +157,3 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
-
-" NERD Commenter mapings
-[count]<leader>cc |NERDComComment|
-[count]<leader>cm |NERDComMinimalComment|
