@@ -120,9 +120,6 @@ inoremap <C-V> <C-R>*
 inoremap <C-S> <esc>:w<cr>
 nnoremap <C-S> :w<cr>
 vnoremap <C-S> :w<cr>
-" nnoremap <C-C> "+y
-" nnoremap <C-C> "+yl 
-" nnoremap <C-V> "+P
 
 inoremap kj <Esc>
 vnoremap <space><space> <Esc>
