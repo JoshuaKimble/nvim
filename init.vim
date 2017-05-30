@@ -52,6 +52,8 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""Custom Settings""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""
+"set space to leader
+let mapleader = "\<Space>"
 
 " pastemode toggle
 set pastetoggle=<F5>
