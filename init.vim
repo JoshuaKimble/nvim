@@ -5,7 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Syntax highlighting
-Plug 'crusoexia/vim-dracula'
+Plug 'dracula/vim'
 
 " Syntax for js
 Plug 'jelera/vim-javascript-syntax'
@@ -84,7 +84,7 @@ set ts=4 sw=4 sts=4 et
 
 " syntax highlighting
 syntax on
-colorscheme dracula
+color dracula
 set t_Co=256 
 
 " line numbers
