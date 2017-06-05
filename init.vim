@@ -5,7 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Syntax highlighting
-Plug 'dracula/vim'
+Plug 'JoshuaKimble/vim-dracula'
 
 " Syntax for js
 Plug 'jelera/vim-javascript-syntax'
