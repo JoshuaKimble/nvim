@@ -128,7 +128,7 @@ vnoremap <space><space> <Esc>
 cnoremap kj <Esc>
 
 " tabs
-map <C-w> :tabclose<cr>
+map ct :tabclose<cr>
 
 " clear search 'ctrl -'
 nnoremap <C-_> :noh<cr>
