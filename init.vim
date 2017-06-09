@@ -64,8 +64,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 " ctrlp show hidden files
 let g:ctrlp_show_hidden = 1
 
-" Nerdtree show hidden files
+" Nerdtree show hidden files and winSize
 let NERDTreeShowHidden = 1
+let g:NERDTreeWinSize=40
 
 " vim cursor
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
